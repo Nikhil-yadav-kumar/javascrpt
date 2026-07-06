@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   let firstPromise = new Promise((resolve, reject) =>{
+    //     console.log("Nikhil");
+    //     // resolve(1001);
+    //     reject( new error('internal server error'));
+    //   }); 
+
+    let firstPromise = new Promise((resolve, reject) =>{
+        setTimeout(function sayName(){
+        console.log("Nikhil");
+    }, 10000);
+    resolve(1001);
+    })
+
+    // function sayName(){
+    //     console.log("Nikhil");
+    // }
+    // setTimeout(sayName,10000)
+
+    // setTimeout(function sayName(){
+    //     console.log("Nikhil");
+    // }, 10000);
+    </script>
+</body>
+</html>

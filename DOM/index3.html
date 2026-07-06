@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div>
+        <h1 id="head">hii</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugiat?</p>
+    </div> -->
+
+    <div id="wrapper">
+        <p id="fpara">first para</p>
+        <p id="tpara">Second para</p>
+        <p id="tpara">third para</p>
+        <p id="fopara"> fourth para</p>
+    </div>
+    <script>
+        // let heading = document.getElementById("head")
+        // let para= document.getElementById("para")
+        // para.addEventListener("dblclick", function(){
+        //     para.textContent="Nikhil";
+        //     para.style.fontWeight="bold";
+        //     para.style.color='red';
+        // })
+
+        // heading.addEventListener('click', function(){
+        //     heading.textContent="Nikhil kumar";
+
+        // })
+
+        function alertPara(event){
+            alert("you can clicked on para:"+ event.target.textContent);
+    
+        }
+        let myDiv=document.getElementById('wrapper');
+        document.addEventListener('click', alertPara);
+    </script>
+    
+</body>
+</html>
