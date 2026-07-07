@@ -28,22 +28,22 @@
 
 
 
-// console.log("Before");
-// setTimeout(() => {
-//   console.log("Inside setTimeout");
-// }, 1000);
-// console.log("after");
+console.log("Before");
+setTimeout(() => {
+  console.log("Inside setTimeout");
+}, 1000);
+console.log("after");
 
 
 
-// function greet(name,callback){
-//     console.log("hello " + name)
-//     callback();
-// }
-// function sayBye(){
-//     console.log("good bye")
-// }
-// greet("Nikhil",sayBye)
+function greet(name,callback){
+    console.log("hello " + name)
+    callback();
+}
+function sayBye(){
+    console.log("good bye")
+}
+greet("Nikhil",sayBye)
 
 
 
