@@ -28,32 +28,42 @@
 
 
 
-console.log("Before");
-setTimeout(() => {
-  console.log("Inside setTimeout");
-}, 1000);
-console.log("after");
+// console.log("Before");
+// setTimeout(() => {
+//   console.log("Inside setTimeout");
+// }, 1000);
+// console.log("after");
 
 
 
-function greet(name,callback){
-    console.log("hello " + name)
-    callback();
+// function greet(name,callback){
+//     console.log("hello " + name)
+//     callback();
+// }
+// function sayBye(){
+//     console.log("good bye")
+// }
+// greet("Nikhil",sayBye)
+
+
+
+// function Calculate(a,b,callback){
+//     let sum= a+b;
+//     callback(sum);
+// }
+// function Add(sum){
+//     console.log("sum is: "+ sum)
+// }
+// Calculate(5,10,Add);
+
+
+
+
+function multiply(a,b,callback){
+    let result = a*b;
+    callback(result);
 }
-function sayBye(){
-    console.log("good bye")
+function display(result){
+    console.log("Result is: "+ result)
 }
-greet("Nikhil",sayBye)
-
-
-
-function Calculate(a,b,callback){
-    let sum= a+b;
-    callback(sum);
-}
-function Add(sum){
-    console.log("sum is: "+ sum)
-
-}
-
-Calculate(5,10,Add)
+multiply(5,6,display);
