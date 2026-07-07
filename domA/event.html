@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1. <button id="btn">Click me</button> -->
+
+    <form id="form">
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <button id="btn">Click me</button>
+
+    </form>
+    
+
+    <script>
+        //1/
+        // const button = document.getElementById('btn');
+        // button.addEventListener('click', function(){
+        //     alert("button clicked")
+        // });
+
+
+        //2
+        const input=document.getElementById('name');
+        const button=document.getElementById('btn');
+        button.addEventListener("click",function(){
+            alert("You Entered: " + input.value);
+        });
+    </script>
+</body>
+</html>
