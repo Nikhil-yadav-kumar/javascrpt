@@ -109,47 +109,47 @@
 
 
 
-const products = [
-    { name: "Milk", price: 40 },
-    { name: "Rice", price: 80 },
-    { name: "Sugar", price: 60 },
-    { name: "Salt", price: 20 }
-];
-const expensiveProducts = products.filter(product => product.price > 50);
-console.log(expensiveProducts);
+// const products = [
+//     { name: "Milk", price: 40 },
+//     { name: "Rice", price: 80 },
+//     { name: "Sugar", price: 60 },
+//     { name: "Salt", price: 20 }
+// ];
+// const expensiveProducts = products.filter(product => product.price > 50);
+// console.log(expensiveProducts);
 
 
 
-const employees = [
-    { id: 101, name: "Rahul" },
-    { id: 102, name: "Aman" },
-    { id: 103, name: "Priya" }
-];
-const employee = employees.find(emp => emp.id === 102);
-console.log(employee);//find()?Returns the first matching object.Stops searching once found.
-
-
-
-
-const prices = [250, 150, 300, 500];
-const total = prices.reduce((sum, price) => sum + price, 0);
-console.log(total);
-
-
-
-let isLoggedIn = true;
-if (isLoggedIn) {
-    console.log("Dashboard");
-} else {
-    console.log("Login");
-}
+// const employees = [
+//     { id: 101, name: "Rahul" },
+//     { id: 102, name: "Aman" },
+//     { id: 103, name: "Priya" }
+// ];
+// const employee = employees.find(emp => emp.id === 102);
+// console.log(employee);//find()?Returns the first matching object.Stops searching once found.
 
 
 
 
-async function getposts() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-    const data = await response.json();
-    console.log(data);      
-}
-getposts();
+// const prices = [250, 150, 300, 500];
+// const total = prices.reduce((sum, price) => sum + price, 0);
+// console.log(total);
+
+
+
+// let isLoggedIn = true;
+// if (isLoggedIn) {
+//     console.log("Dashboard");
+// } else {
+//     console.log("Login");
+// }
+
+
+
+
+// async function getposts() {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//     const data = await response.json();
+//     console.log(data);      
+// }
+// getposts();
